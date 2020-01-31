@@ -7,7 +7,6 @@ import random
 import time
 
 file = sys.argv[1] if len(sys.argv) > 1 else "todo"
-print(file)
 path = "{}/{}.txt".format(os.path.expanduser(os.path.dirname(os.path.abspath(__file__))), file)
 
 with open(path) as f:
